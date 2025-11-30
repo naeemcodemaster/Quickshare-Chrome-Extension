@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Social Links Quickshare</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<div class="container">
+<header class="header">
+<img class="logo" src="icons/link-icon-black.svg" alt="logo"/>
+<h1>Quick Links</h1>
+</header>
+
+
+<!-- search -->
+<div class="search-wrap">
+	<input id="search" class="search" type="search" placeholder="Search links..." />
+</div>
+
+<main id="links-list" class="links-list">
+<!-- links are injected here -->
+</main>
+
+
+<footer class="footer">
+<button id="add-btn" class="btn primary">+ Add / Edit Links</button>
+<small class="hint">Click the copy icon to copy link to clipboard</small>
+</footer>
+</div>
+
+
+<!-- Modal for add/edit -->
+<div id="modal" class="modal hidden">
+<div class="modal-card">
+<h2 id="modal-title">Add / Edit Link</h2>
+<label>
+Platform label
+<input id="input-label" type="text" placeholder="e.g. Instagram" />
+</label>
+<label>
+URL
+<input id="input-url" type="url" placeholder="https://your-link.example" />
+</label>
+<!-- inline input error -->
+<div id="input-error" class="input-error hidden"></div>
+<label>
+Icon (choose: instagram, tiktok, linkedin, youtube, github, portfolio)
+<select id="input-icon">
+<option value="instagram">Instagram</option>
+<option value="tiktok">TikTok</option>
+<option value="linkedin">LinkedIn</option>
+<option value="youtube">YouTube</option>
+<option value="github">GitHub</option>
+<option value="portfolio">Portfolio</option>
+</select>
+</label>
+
+
+<div class="modal-actions">
+<button id="save-btn" class="btn primary">Save</button>
+<button id="delete-btn" class="btn danger">Delete</button>
+<button id="cancel-btn" class="btn">Cancel</button>
+</div>
+</div>
+</div>
+
+
+<!-- toast notifications -->
+<div id="toast" class="toast hidden"></div>
+
+<script src="popup.js"></script>
+</body>
+</html>
