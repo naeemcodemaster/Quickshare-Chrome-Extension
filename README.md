@@ -11,10 +11,6 @@ Social Links Quickshare is a lightweight Chrome extension that allows you to qui
 * Responsive and user-friendly UI.
 * Data stored using Chrome's `storage.sync` so it syncs across your signed-in devices.
 
-## Screenshots
-
-![Popup](./screenshots/popup.png)
-![Add/Edit Modal](./screenshots/modal.png)
 
 ## Installation (Local / Personal Use)
 
